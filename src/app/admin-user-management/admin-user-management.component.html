@@ -1,0 +1,40 @@
+<p-toast></p-toast>
+<div class="card">
+    <h5>User Management</h5>
+    <p-toolbar styleClass="p-mb-4">
+        <ng-template pTemplate="left">
+            <button pButton pRipple label="Delete selected users" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedUsers()" [disabled]="!selectedUsers || !selectedUsers.length"></button>
+        </ng-template>
+    </p-toolbar>
+
+    <p-table [value]="users" [(selection)]="selectedUsers" dataKey="email">
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width: 3rem">
+                    <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                </th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-user>
+            <tr>
+                <td>
+                    <p-tableCheckbox [value]="user"></p-tableCheckbox>
+                </td>
+                <td>{{user.firstname}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.status}}</td>
+                <td>
+                    <button pButton pRipple icon="pi pi-check" class="p-button-rounded p-button-success p-mr-2" (click)="AcceptUser(user)" *ngIf="user.status == 'Waiting for Confirmation'"></button>
+                    <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="DeleteUser(user)"></button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+    <p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+</div>

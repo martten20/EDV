@@ -1,0 +1,87 @@
+.courses-title{
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    margin-left: 100px;
+}
+.courses-title h2{
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.course-enroll{
+    text-align: end;
+    margin-bottom: 0px;
+}
+
+.course-enroll h2{
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    top: 6px;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    color: black;
+}
+
+.course-enroll button{
+    background-color: #ff1949;
+    margin-right: 80px;
+}
+
+.course-image{
+   margin-left: 100px;
+}
+
+.vertical-props{
+    position:absolute;
+    left:700px;
+    top: 320px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    color: black;
+}
+
+.vertical-props ul{
+    list-style: none;
+}
+
+.course-syllabus-side{
+        position:absolute;
+        left:700px;
+        top: 700px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+        color: black;
+        margin-left: 20px;
+}
+
+.course-syllabus{
+
+    margin-left: 100px;
+}
+
+.course-syllabus h2,h3{
+    font-weight: 600;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    color: black;
+   
+}
+
+.course-syllabus ul{
+    list-style:decimal;
+    font-size: 20px;
+    
+}
+
+.course-syllabus a{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.course-syllabus a:hover{
+    color:#ff1949;
+}

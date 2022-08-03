@@ -1,0 +1,103 @@
+.register-area{
+    display:flex;
+    box-sizing: border-box;
+    display:block;
+}
+
+.left-area{
+    flex: 0 0 auto;
+    width:50%;
+    float: left;
+}
+
+.left-area img{
+    width: 100%;
+    height: 713px;
+    vertical-align: middle;
+}
+
+.right-area{
+    flex: 0 0 auto;
+    width:50%;
+    float: right;
+}
+
+.register-form{
+    text-align: center;
+}
+
+
+.img-container{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.img-container a{
+    font-size: 30px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+.img-container a:hover{
+    color:#ff1949;
+
+}
+
+.register-form h3{
+    font-size: 35px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.register-form p{
+    font-size: 15px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    color: #727695;
+}
+
+.register-form a{
+    color: black;
+    cursor: pointer;
+}
+
+.register-form a:hover{
+    color:#ff1949;
+}
+
+.form-container{
+    margin-top: 30px;
+}
+
+.form-control{
+    background-color: var(--whiteColor);
+    color: black;
+    border: none;
+    transition: 5s;
+    box-shadow: 0 5px 28.5px 1.5px #9598c833!important;
+    height: 55px;
+    max-width: 500px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+
+}
+
+.form-container button{
+    transition: 5s;
+    display: block;
+    width: 500px;
+    padding: 13px 25px 12px;
+    position: relative;
+    background-color:#ff1949;
+    color: white;
+    box-shadow: 0 5px 28.5px 1.5px #ff612f33;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#ff1949;
+    border-radius: 5px;
+    font-size: 14.5px;
+    font-weight: 700;
+    margin-left: 150px;
+}
